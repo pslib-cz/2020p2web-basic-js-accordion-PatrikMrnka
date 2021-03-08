@@ -225,6 +225,27 @@
             </div>
         </footer>
     </div>
-</body>
+    <script>
+        var prvky = document.getElementsByClassName("vypujcka-item")
+        console.log(prvky);
+        var detail = document.getElementsByClassName("detail-vypujcky-container")
+        console.log(detail)
 
+        for (let i = 0; i < prvky.length; i++)
+        {
+            let input = prvky[i].querySelector("input")
+            console.log(input)
+            input.onclick = () => {
+                if(input.checked)
+                {
+                    detail[i].style.height = detail[i].scrollHeight + "px";
+                }
+                else
+                {
+                    detail[i].style.height = "0px"
+                }
+            }
+        }
+    </script>
+</body>
 </html>
