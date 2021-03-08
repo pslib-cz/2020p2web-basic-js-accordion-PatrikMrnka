@@ -227,23 +227,23 @@
     </div>
     <script>
         var prvky = document.getElementsByClassName("vypujcka-item")
-        console.log(prvky);
+        console.log(prvky)
         var detail = document.getElementsByClassName("detail-vypujcky-container")
         console.log(detail)
 
-        for (let i = 0; i < prvky.length; i++)
-        {
-            let input = prvky[i].querySelector("input")
-            console.log(input)
-            input.onclick = () => {
-                if(input.checked)
+        for (let i = 0; i < prvky.length; i++) {
+            let inpu = prvky[i].querySelector("input")
+            console.log(inpu)
+            inp.onclick = () => {
+                if(inpu.checked) 
                 {
                     detail[i].style.height = detail[i].scrollHeight + "px";
                 }
-                else
+                else 
                 {
                     detail[i].style.height = "0px"
                 }
+
             }
         }
     </script>
